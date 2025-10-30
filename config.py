@@ -25,6 +25,8 @@ keys = [
 
 # Move windows between left/right columns or move up/down in current stack.
 # Moving out of range in Columns layout will create new column.
+# Déplacer les fenêtres entre les colonnes gauche/droite ou monter/descendre dans la pile actuelle.
+# Sortir de la plage en disposition « Colonnes » créera une nouvelle colonne.
     Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
     Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
@@ -36,6 +38,8 @@ keys = [
 
 # Grow windows. If current window is on the edge of screen and direction
 # will be to screen edge - window would shrink.
+# Agrandir les fenêtres. Si la fenêtre actuelle est au bord de l’écran et que la direction choisie pointe vers ce bord, 
+# la fenêtre rétrécira.
     Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
     Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
